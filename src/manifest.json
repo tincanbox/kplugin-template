@@ -1,0 +1,51 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "desktop": {
+    "js": [
+      "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "https://apis.google.com/js/api.js",
+      "lib/sweetalert2/sweetalert2.all.min.js",
+      "js/vendor/underscore/underscore-min.js",
+      "js/lib/GAPI_adaptor.js",
+      "js/lib/PluginConfig.js",
+      "js/lib/PluginAPI.js",
+      "js/lib/PluginUI.js",
+      "js/lib/PluginMan.js",
+      "js/dist/desktop.js"
+    ],
+    "css": [
+      "css/51-modern-default.css",
+      "css/desktop.css"
+    ]
+  },
+  "icon": "image/icon.png",
+  "config": {
+    "html": "html/config.html",
+    "js": [
+      "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "https://apis.google.com/js/api.js",
+      "lib/sweetalert2/sweetalert2.all.min.js",
+      "js/vendor/underscore/underscore-min.js",
+      "js/lib/GAPI_adaptor.js",
+      "js/lib/PluginConfig.js",
+      "js/lib/PluginAPI.js",
+      "js/lib/PluginUI.js",
+      "js/lib/PluginMan.js",
+      "js/dist/config.js"
+    ],
+    "css": [
+      "css/51-modern-default.css",
+      "css/config.css"
+    ],
+    "required_params": [
+    ]
+  },
+  "name": {
+    "en": "kPlugin_TEMPLATE"
+  },
+  "description": {
+    "en": "This is a template of kPlugin."
+  }
+}
