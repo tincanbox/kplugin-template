@@ -28,7 +28,7 @@
 
   var prt = PluginMan.prototype;
 
-  /* 
+  /*
    * 詳細は sweetalert2 のヘルプを参照。
    */
   prt.dialog = function(){
