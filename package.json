@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "node scripts/npm-start.js",
-    "upload": "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
+    "watch": "./run/watch",
     "develop": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "lint": "eslint src"
