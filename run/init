@@ -16,33 +16,40 @@ if [ -e "$kpath" ]
     mv ./webpack.config.js "$bkdir"/
     cp "$kpath"/webpack.config.js ./
 
+    # run dir ========================
+
     if [ -e ./run ]
       then
         mv ./run "$bkdir"/
-        mkdir ./run
-        cp -r "$kpath"/run/watch ./run/
-        chmod 0755 ./run/watch
       else
         echo "run dir not found."
     fi
 
+    mkdir ./run
+    cp -r "$kpath"/run/watch ./run/
+    chmod 0755 ./run/watch
+
+
     if [ -e ./scripts ]
       then
         mv ./scripts "$bkdir"/
-        mkdir ./scripts
-        cp -r "$kpath"/scripts/* ./scripts/
       else
         echo "scripts dir not found."
     fi
 
+    mkdir ./scripts
+    cp -r "$kpath"/scripts/* ./scripts/
+
+
     if [ -e ./src ]
       then
         mv ./src "$bkdir"/
-        mkdir ./src
-        cp -r "$kpath"/src/* ./src/
       else
         echo "src dir not found."
     fi
+
+    mkdir ./src
+    cp -r "$kpath"/src/* ./src/
 
     exit 0
   else
