@@ -5,10 +5,8 @@ if [ -e "$kpath" ]
   then
     bkdir="bk."$(date +"%s")
 
-    if [ -e "$bkdir" ]
-      then
-      else
-        mkdir $bkdir
+    if [ ! -e "$bkdir" ]
+      mkdir $bkdir
     fi
 
     mv ./package.json "$bkdir"/
