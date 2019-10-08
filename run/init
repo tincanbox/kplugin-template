@@ -3,8 +3,13 @@ echo $(pwd)
 kpath="./kplugin-template"
 if [ -e "$kpath" ]
   then
-    bkdir="bk."$(date +"%Y%m%d")
-    mkdir $bkdir
+    bkdir="bk."$(date +"%s")
+
+    if [ -e "$bkdir" ]
+      then
+      else
+        mkdir $bkdir
+    fi
 
     mv ./package.json "$bkdir"/
     cp "$kpath"/package.json ./
