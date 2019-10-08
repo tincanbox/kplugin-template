@@ -1,0 +1,3 @@
+[submodule "src/vendor/kluginn"]
+	path = src/vendor/kluginn
+	url = git@github.com:tincanbox/kluginn.git
