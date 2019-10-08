@@ -16,6 +16,16 @@ if [ -e "$kpath" ]
     mv ./webpack.config.js "$bkdir"/
     cp "$kpath"/webpack.config.js ./
 
+    if [ -e ./run ]
+      then
+        mv ./run "$bkdir"/
+        mkdir ./run
+        cp -r "$kpath"/run/watch ./run/
+        chmod 0755 ./run/watch
+      else
+        echo "run dir not found."
+    fi
+
     if [ -e ./scripts ]
       then
         mv ./scripts "$bkdir"/
