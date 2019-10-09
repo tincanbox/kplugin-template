@@ -16,12 +16,17 @@
     "html": "asset/view/config.html",
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "vendor/kluginn/req/fmjs/src/fm.js",
+      "vendor/kluginn/req/papaparse/papaparse.min.js",
+      "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
+      "vendor/kluginn/req/underscore/underscore-min.js",
       "vendor/kluginn/dist/kluginn.js",
       ".build/config.js"
     ],
     "css": [
       "asset/css/51-modern-default.css",
-      "asset/css/config.css"
+      "asset/css/config.css",
+      "vendor/kluginn/req/sweetalert2/sweetalert2.min.css"
     ],
     "required_params": [
     ]
@@ -30,6 +35,10 @@
   "desktop": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "vendor/kluginn/req/fmjs/src/fm.js",
+      "vendor/kluginn/req/papaparse/papaparse.min.js",
+      "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
+      "vendor/kluginn/req/underscore/underscore-min.js",
       "vendor/kluginn/dist/kluginn.js",
       ".build/desktop.js"
     ],
@@ -42,6 +51,10 @@
   "mobile": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "vendor/kluginn/req/fmjs/src/fm.js",
+      "vendor/kluginn/req/papaparse/papaparse.min.js",
+      "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
+      "vendor/kluginn/req/underscore/underscore-min.js",
       "vendor/kluginn/dist/kluginn.js",
       ".build/mobile.js"
     ]
