@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node scripts/npm-start.js",
     "watch": "./run/watch.local",
-    "develop": "webpack --mode development",
+    "develop": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "lint": "eslint src"
   },
