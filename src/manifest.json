@@ -16,7 +16,7 @@
     "html": "asset/view/config.html",
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "vendor/kluginn/dist/kluginn.js",
+      "kplugin-template/src/vendor/kluginn/dist/kluginn.js",
       "build/config.js"
     ],
     "css": [
@@ -31,7 +31,7 @@
   "desktop": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "vendor/kluginn/dist/kluginn.js",
+      "kplugin-template/src/vendor/kluginn/dist/kluginn.js",
       "build/desktop.js"
     ],
     "css": [
@@ -43,7 +43,7 @@
   "mobile": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "vendor/kluginn/dist/kluginn.js",
+      "kplugin-template/src/vendor/kluginn/dist/kluginn.js",
       "build/mobile.js"
     ]
   }
