@@ -1,0 +1,13 @@
+echo $(pwd)
+
+kpath="./kplugin-template"
+if [ -e "$kpath" ]
+  then
+    mkdir ./src
+    cp -r "$kpath"/src/vendor/* ./src/vendor/
+
+    exit 0
+  else
+    echo "Should have kplugin-template dir."
+    exit 1
+fi
