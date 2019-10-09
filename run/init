@@ -10,6 +10,9 @@ if [ -e "$kpath" ]
         mkdir $bkdir
     fi
 
+    mv ./.gitignore "$bkdir"/
+    cp "$kpath"/.gitignore ./
+
     mv ./package.json "$bkdir"/
     cp "$kpath"/package.json ./
 
