@@ -9,7 +9,7 @@ module.exports = {
     mobile: './src/script/hook/mobile.js',
   },
   output: {
-    path: path.resolve(__dirname, 'src', 'dist'),
+    path: path.resolve(__dirname, 'src', 'build'),
     filename: '[name].js'
   },
   plugins: [
