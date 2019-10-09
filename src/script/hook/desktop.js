@@ -1,27 +1,11 @@
-(function(kintone, factory) {
+(function(k, factory) {
   'use strict';
 
-  var plugin = new Kluginn(kintone);
-  factory(plugin);
+  factory(new Kluginn.default());
 
 })(kintone, function(p){
 
-  var plugin = p;
-  var $ = plugin.$;
-
-  // Do Your Thing
-
-  /* Sample: Google OAuth
-  var $gapi = new GAPI_adaptor({
-    'apiKey': '',
-    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest'],
-    'clientId': '',
-    'scope': 'https://www.googleapis.com/auth/spreadsheets'
-  });
-
-  $gapi.init().then(function(){
-    console.log("auth completed");
-  });
-  */
+  var K = p;
+  var $ = K.$;
 
 });

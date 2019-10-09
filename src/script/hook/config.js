@@ -1,11 +1,11 @@
-(function(kintone, factory) {
+(function(k, factory) {
   'use strict';
 
-  factory(new Kluginn(kintone));
+  factory(new Kluginn.default());
 
 })(kintone, function(p){
 
-  var plugin = p;
-  var $ = plugin.$;
+  var K = p;
+  var $ = K.$;
 
 });

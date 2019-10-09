@@ -45,10 +45,6 @@
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
       "vendor/kluginn/dist/kluginn.js",
       "script/hook/mobile.js"
-    ],
-    "css": [
-      "asset/css/51-modern-default.css",
-      "asset/css/mobile.css"
     ]
   }
 

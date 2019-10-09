@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "start": "node scripts/npm-start.js",
-    "watch": "./run/watch",
-    "develop": "webpack --mode development --watch",
+    "watch": "./run/watch.local",
+    "develop": "webpack --mode development",
     "build": "webpack --mode production",
     "lint": "eslint src"
   },
