@@ -8,4 +8,9 @@
   var K = p;
   var $ = K.$;
 
+  K.init().then(main);
+
+  function main(){
+  }
+
 });
