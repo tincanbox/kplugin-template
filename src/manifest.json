@@ -16,8 +16,6 @@
     "html": "asset/view/config.html",
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "https://apis.google.com/js/api.js",
-      "script/lib/GAPI_adaptor.js",
       "vendor/kluginn/dist/kluginn.js",
       "script/hook/config.js"
     ],
@@ -33,8 +31,6 @@
   "desktop": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "https://apis.google.com/js/api.js",
-      "script/lib/GAPI_adaptor.js",
       "vendor/kluginn/dist/kluginn.js",
       "script/hook/desktop.js"
     ],
@@ -47,14 +43,7 @@
   "mobile": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "https://apis.google.com/js/api.js",
-      "vendor/sweetalert2/sweetalert2.all.min.js",
-      "vendor/underscore/underscore-min.js",
-      "script/lib/GAPI_adaptor.js",
-      "vendor/Kluginn/Config.js",
-      "vendor/Kluginn/API.js",
-      "vendor/Kluginn/UI.js",
-      "vendor/Kluginn/Core.js",
+      "vendor/kluginn/dist/kluginn.js",
       "script/hook/mobile.js"
     ],
     "css": [
