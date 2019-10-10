@@ -12,6 +12,11 @@ module.exports = {
     path: path.resolve(__dirname, 'src', '.build'),
     filename: '[name].js'
   },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000,
+    ignored: /node_modules/
+  },
   plugins: [
     new KintonePlugin({
       manifestJSONPath: './src/manifest.json',
