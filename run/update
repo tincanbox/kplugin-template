@@ -1,5 +1,7 @@
 echo $(pwd)
 
+git submodule update --remote --recursive
+
 kpath="./kplugin-template"
 if [ -e "$kpath" ]
   then
@@ -9,3 +11,4 @@ if [ -e "$kpath" ]
     echo "Should have kplugin-template dir."
     exit 1
 fi
+
