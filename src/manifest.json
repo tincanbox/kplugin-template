@@ -25,6 +25,7 @@
     ],
     "css": [
       "asset/css/51-modern-default.css",
+      "asset/css/boldstrap.css",
       "asset/css/config.css",
       "vendor/kluginn/req/sweetalert2/sweetalert2.min.css"
     ],
@@ -44,6 +45,7 @@
     ],
     "css": [
       "asset/css/51-modern-default.css",
+      "asset/css/boldstrap.css",
       "asset/css/desktop.css"
     ]
   },
