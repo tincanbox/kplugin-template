@@ -1,8 +1,13 @@
+MODE = 'development';
+
+//
 const path = require("path");
 const KintonePlugin = require("@kintone/webpack-plugin-kintone-plugin");
+const enabledSourceMap = MODE === "development";
 
+//
 module.exports = {
-  mode: 'development',
+  mode: MODE,
   entry: {
     desktop: './src/script/hook/desktop.js',
     config: './src/script/hook/config.js',
@@ -13,9 +18,33 @@ module.exports = {
     filename: '[name].js'
   },
   watchOptions: {
-    aggregateTimeout: 300,
-    poll: 1000,
     ignored: /node_modules/
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          // Compiles Sass to CSS
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: MODE == 'development',
+            }
+          },
+
+        ],
+      },
+    ],
   },
   plugins: [
     new KintonePlugin({

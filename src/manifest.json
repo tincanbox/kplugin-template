@@ -4,20 +4,18 @@
   "type": "APP",
   "icon": "asset/image/icon.png",
   "name": {
-    "en": "kPlugin_TEMPLATE",
-    "ja": "kPlugin_TEMPLATE"
+    "en": "kplugin-template"
   },
   "description": {
-    "en": "This is a template of kPlugin.",
-    "ja": "This is a template of kPlugin."
+    "en": "kplugin-template"
   },
 
   "config": {
     "html": "asset/view/config.html",
     "js": [
-      "https://js.cybozu.com/font-awesome/v5.11.2/css/fontawesome.min.css",
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "vendor/bootstrap/js/bootstrap.bundle.js",
+      "vendor/kluginn/req/popperjs/popper.min.js",
+      "vendor/kluginn/req/bootstrap/js/bootstrap.bundle.min.js",
       "vendor/kluginn/req/fmjs/src/fm.js",
       "vendor/kluginn/req/papaparse/papaparse.min.js",
       "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
@@ -27,9 +25,10 @@
     ],
     "css": [
       "asset/css/51-modern-default.css",
-      "vendor/bootstrap/css/bootstrap.min.css",
-      "vendor/kluginn/req/sweetalert2/sweetalert2.min.css",
-      "asset/css/config.css"
+      "https://js.cybozu.com/font-awesome/v5.5.0/css/fontawesome-all.min.css",
+      "vendor/kluginn/req/bootstrap/css/bootstrap.min.css",
+      "asset/css/config.css",
+      "vendor/kluginn/req/sweetalert2/sweetalert2.min.css"
     ],
     "required_params": [
     ]
@@ -38,7 +37,8 @@
   "desktop": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
-      "vendor/bootstrap/js/bootstrap.bundle.js",
+      "vendor/kluginn/req/popperjs/popper.min.js",
+      "vendor/kluginn/req/bootstrap/js/bootstrap.bundle.min.js",
       "vendor/kluginn/req/fmjs/src/fm.js",
       "vendor/kluginn/req/papaparse/papaparse.min.js",
       "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
@@ -47,9 +47,9 @@
       ".build/desktop.js"
     ],
     "css": [
-      "https://js.cybozu.com/font-awesome/v5.11.2/css/fontawesome.min.css",
       "asset/css/51-modern-default.css",
-      "vendor/bootstrap/css/bootstrap.min.css",
+      "https://js.cybozu.com/font-awesome/v5.5.0/css/fontawesome-all.min.css",
+      "vendor/kluginn/req/bootstrap/css/bootstrap.min.css",
       "asset/css/desktop.css"
     ]
   },
