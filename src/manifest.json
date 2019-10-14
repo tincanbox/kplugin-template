@@ -15,7 +15,9 @@
   "config": {
     "html": "asset/view/config.html",
     "js": [
+      "https://js.cybozu.com/font-awesome/v5.11.2/css/fontawesome.min.css",
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "vendor/bootstrap/js/bootstrap.bundle.js",
       "vendor/kluginn/req/fmjs/src/fm.js",
       "vendor/kluginn/req/papaparse/papaparse.min.js",
       "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
@@ -25,9 +27,9 @@
     ],
     "css": [
       "asset/css/51-modern-default.css",
-      "asset/css/boldstrap.css",
-      "asset/css/config.css",
-      "vendor/kluginn/req/sweetalert2/sweetalert2.min.css"
+      "vendor/bootstrap/css/bootstrap.min.css",
+      "vendor/kluginn/req/sweetalert2/sweetalert2.min.css",
+      "asset/css/config.css"
     ],
     "required_params": [
     ]
@@ -36,6 +38,7 @@
   "desktop": {
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "vendor/bootstrap/js/bootstrap.bundle.js",
       "vendor/kluginn/req/fmjs/src/fm.js",
       "vendor/kluginn/req/papaparse/papaparse.min.js",
       "vendor/kluginn/req/sweetalert2/sweetalert2.all.min.js",
@@ -44,8 +47,9 @@
       ".build/desktop.js"
     ],
     "css": [
+      "https://js.cybozu.com/font-awesome/v5.11.2/css/fontawesome.min.css",
       "asset/css/51-modern-default.css",
-      "asset/css/boldstrap.css",
+      "vendor/bootstrap/css/bootstrap.min.css",
       "asset/css/desktop.css"
     ]
   },
