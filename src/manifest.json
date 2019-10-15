@@ -26,7 +26,7 @@
     "css": [
       "asset/css/51-modern-default.css",
       "https://js.cybozu.com/font-awesome/v5.5.0/css/fontawesome-all.min.css",
-      "vendor/kluginn/req/bootstrap/css/bootstrap.min.css",
+      "vendor/kluginn/req/bootstrap-iso/dist/css/bootstrap-iso.min.css",
       "asset/css/config.css",
       "vendor/kluginn/req/sweetalert2/sweetalert2.min.css"
     ],
@@ -49,7 +49,7 @@
     "css": [
       "asset/css/51-modern-default.css",
       "https://js.cybozu.com/font-awesome/v5.5.0/css/fontawesome-all.min.css",
-      "vendor/kluginn/req/bootstrap/css/bootstrap.min.css",
+      "vendor/kluginn/req/bootstrap-iso/dist/css/bootstrap-iso.min.css",
       "asset/css/desktop.css"
     ]
   },
