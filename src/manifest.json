@@ -16,6 +16,7 @@
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
       "vendor/kluginn/req/tabulator/js/tabulator.min.js",
       "vendor/kluginn/req/popperjs/popper.min.js",
+      "vendor/kluginn/req/dropzone/dropzone.js",
       "vendor/kluginn/req/bootstrap/js/bootstrap.bundle.min.js",
       "vendor/kluginn/req/fmjs/src/fm.js",
       "vendor/kluginn/req/papaparse/papaparse.min.js",
@@ -40,6 +41,7 @@
     "js": [
       "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
       "vendor/kluginn/req/popperjs/popper.min.js",
+      "vendor/kluginn/req/dropzone/dropzone.js",
       "vendor/kluginn/req/bootstrap/js/bootstrap.bundle.min.js",
       "vendor/kluginn/req/fmjs/src/fm.js",
       "vendor/kluginn/req/papaparse/papaparse.min.js",
