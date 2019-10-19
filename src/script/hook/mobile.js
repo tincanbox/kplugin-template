@@ -10,6 +10,11 @@
 
   K.init().then(main);
 
+  /* Put kintone-event listener on top level.
+   *
+   * K.$k.events.on()
+   */
+
   function main(){
   }
 
