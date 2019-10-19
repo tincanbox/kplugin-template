@@ -26,8 +26,8 @@ Confirm your src/ dir is replaced.
 Then edit your manifest.json, package.json and make first commit.
 
 
-case: update submodules.
+case: update submodules and req-file contents.
 
-    git submodule update --remote --recursive
+    ./kplugin-template/run/update
 
 
