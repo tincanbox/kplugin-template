@@ -7,6 +7,9 @@
 
   var K = p;
   var $ = K.$;
+  var S = {
+    config: K.config.fetch()
+  };
 
   // "C"onfig
   var C = {
