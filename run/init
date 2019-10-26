@@ -3,59 +3,65 @@ echo $(pwd)
 kpath="./kplugin-template"
 if [ -e "$kpath" ]
   then
-    bkdir="bk."$(date +"%s")
-
-    if [ ! -e "$bkdir" ]
-      then
-        mkdir $bkdir
-    fi
-
-    mv ./.gitignore "$bkdir"/
-    cp "$kpath"/.gitignore ./
-
-    mv ./package.json "$bkdir"/
-    cp "$kpath"/package.json ./
-
-    mv ./webpack.config.js "$bkdir"/
-    cp "$kpath"/webpack.config.js ./
-
-    # run dir ========================
-
-    if [ -e ./run ]
-      then
-        mv ./run "$bkdir"/
-      else
-        echo "run dir not found."
-    fi
-
-    mkdir ./run
-    cp -r "$kpath"/run/watch ./run/
-    chmod 0755 ./run/watch
-
-
-    if [ -e ./scripts ]
-      then
-        mv ./scripts "$bkdir"/
-      else
-        echo "scripts dir not found."
-    fi
-
-    mkdir ./scripts
-    cp -r "$kpath"/scripts/* ./scripts/
-
-
-    if [ -e ./src ]
-      then
-        mv ./src "$bkdir"/
-      else
-        echo "src dir not found."
-    fi
-
-    mkdir ./src
-    cp -r "$kpath"/src/* ./src/
-
-    exit 0
-  else
+    echo "$kpath"
+else
     echo "Should have kplugin-template dir."
     exit 1
 fi
+
+bkdir="bk."$(date +"%s")
+
+if [ ! -e "$bkdir" ]
+  then
+    mkdir $bkdir
+fi
+
+mv ./.gitignore "$bkdir"/
+cp "$kpath"/.gitignore ./
+
+mv ./package.json "$bkdir"/
+cp "$kpath"/package.json ./
+
+mv ./webpack.config.js "$bkdir"/
+cp "$kpath"/webpack.config.js ./
+
+# run dir ========================
+
+if [ -e ./run ]
+  then
+    mv ./run "$bkdir"/
+  else
+    echo "run dir not found."
+fi
+
+mkdir ./run
+cp -r "$kpath"/run/watch ./run/
+chmod 0755 ./run/watch
+
+
+if [ -e ./scripts ]
+  then
+    mv ./scripts "$bkdir"/
+  else
+    echo "scripts dir not found."
+fi
+
+mkdir ./scripts
+cp -r "$kpath"/scripts/* ./scripts/
+
+
+if [ -e ./src ]
+  then
+    mv ./src "$bkdir"/
+  else
+    echo "src dir not found."
+fi
+
+mkdir ./src
+cp -r "$kpath"/src/* ./src/
+
+git init
+git submodule init --remote --recursive
+npm install
+
+exit 0
