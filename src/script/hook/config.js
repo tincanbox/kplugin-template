@@ -29,7 +29,7 @@
           var ks = Object.keys(S.properties).sort();
           for(var k of ks){
             var p = S.properties[k];
-            vals[p.code] = p.label + " ["+p.type+"]"
+            vals[p.code] = p.code + " ["+p.type+"]"
           }
           return vals;
         },
