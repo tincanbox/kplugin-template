@@ -1,9 +1,15 @@
+import SharedLib from '../lib/shared.js';
+
 (function(k, factory) {
   'use strict';
 
-  factory(new Kluginn.default());
+  factory(new Kluginn.default(), {
+    plugin: "YOUR_PLUGIN_NAME"
+  });
 
-})(kintone, function(p){
+})(kintone, function(p, info){
+
+  const shared_lib = new SharedLib();
 
   var K = p;
   var $ = K.$;
