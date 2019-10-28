@@ -24,14 +24,16 @@
       {
         title:"Target", field:"target",
         width:150, editor: 'select',
-        editorParams: function(row){
-          var vals = {};
-          var ks = Object.keys(S.properties).sort();
-          for(var k of ks){
-            var p = S.properties[k];
-            vals[p.code] = p.code + " ["+p.type+"]"
-          }
-          return vals;
+        editorParams: {
+          values: function(row){
+            var vals = {};
+            var ks = Object.keys(S.properties).sort();
+            for(var k of ks){
+              var p = S.properties[k];
+              vals[p.code] = p.code + " ["+p.type+"]"
+            }
+            return vals;
+          },
         },
         validator: ["required"]
       },
