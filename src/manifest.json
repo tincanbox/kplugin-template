@@ -67,6 +67,9 @@
       "vendor/kluginn/req/underscore/underscore-min.js",
       "vendor/kluginn/dist/kluginn.js",
       ".build/mobile.js"
+    ],
+    "css": [
+      "asset/css/mobile.css"
     ]
   }
 
