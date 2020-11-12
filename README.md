@@ -9,7 +9,9 @@ Simple Bootstrapper for kintone-plugin.
 
 ## Installation
 
-Init your project
+Init your project FIRST.
+
+DONT forget this.
 
     create-kintone-plugin yourproject
 
@@ -33,15 +35,24 @@ Make your watch.local file and update with your credential.
 
 
 Confirm your src/ directory is created.
-Then edit your manifest.json, package.json and make first commit.
+
+## Config
+
+Update your
+- manifest.json
+- run/watch.local
+- package.json
+
+And make a first commit then push.
 
 
 ## Building
 
-    npx run watch
+    npm run start
 
 
 
+## MISC
 
 case: update submodules and req-file contents.
 

@@ -28,6 +28,12 @@ cp "$kpath"/package.json ./
 mv ./webpack.config.js "$bkdir"/
 cp "$kpath"/webpack.config.js ./
 
+mv ./.npmrc "$bkdir"/
+cp "$kpath"/.npmrc ./
+
+mv ./README.md "$bkdir"/
+cp "$kpath"/README.md ./
+
 # run dir ========================
 
 if [ -e ./run ]
@@ -66,5 +72,7 @@ cp -r "$kpath"/src/* ./src/
 git init
 git submodule update --init --force --remote --recursive
 npm install
+
+kintone-plugin-packer src
 
 exit 0
