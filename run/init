@@ -19,20 +19,25 @@ if [ ! -e "$bkdir" ]
     mkdir $bkdir
 fi
 
-mv ./.gitignore "$bkdir"/
-cp "$kpath"/.gitignore ./
+f=.gitignore
+if [ -e "./""$f" ]; then mv ./"$f" "$bkdir"/ fi
+cp "$kpath"/"$f" ./
 
-mv ./package.json "$bkdir"/
-cp "$kpath"/package.json ./
+f=package.json
+if [ -e "./""$f" ]; then mv ./"$f" "$bkdir"/ fi
+cp "$kpath"/"$f" ./
 
-mv ./webpack.config.js "$bkdir"/
-cp "$kpath"/webpack.config.js ./
+f=webpack.config.js
+if [ -e "./""$f" ]; then mv ./"$f" "$bkdir"/ fi
+cp "$kpath"/"$f" ./
 
-mv ./.npmrc "$bkdir"/
-cp "$kpath"/.npmrc ./
+f=.npmrc
+if [ -e "./""$f" ]; then mv ./"$f" "$bkdir"/ fi
+cp "$kpath"/"$f" ./
 
-mv ./README.md "$bkdir"/
-cp "$kpath"/README.md ./
+f=README.md
+if [ -e "./""$f" ]; then mv ./"$f" "$bkdir"/ fi
+cp "$kpath"/"$f" ./
 
 # run dir ========================
 
@@ -44,8 +49,8 @@ if [ -e ./run ]
 fi
 
 mkdir ./run
-cp -r "$kpath"/run/watch ./run/
-chmod 0755 ./run/watch
+cp -r "$kpath"/run/upload ./run/
+chmod 0755 ./run/upload
 
 
 if [ -e ./scripts ]

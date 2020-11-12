@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "scripts": {
     "start": "node scripts/npm-start.js",
-    "watch": "./run/watch.local",
+    "upload": "./run/upload.local",
     "develop": "npm run build -- --watch",
     "lint": "eslint src",
-    "upload": "kintone-customize-uploader --watch dest/customize-manifest.json",
-    "build": "webpack",
+    "build": "webpack --mode development",
     "build:prod": "webpack --mode production"
   },
   "devDependencies": {

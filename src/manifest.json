@@ -4,10 +4,10 @@
   "type": "APP",
   "icon": "asset/image/icon.png",
   "name": {
-    "en": "kplugin-template"
+    "en": "kplugin-template-default"
   },
   "description": {
-    "en": "kplugin-template"
+    "en": "kplugin-template-default : Rename this for your developing PlugIn."
   },
 
   "config": {
@@ -67,9 +67,6 @@
       "vendor/kluginn/req/underscore/underscore-min.js",
       "vendor/kluginn/dist/kluginn.js",
       ".build/mobile.js"
-    ],
-    "css": [
-      "asset/css/mobile.css"
     ]
   }
 

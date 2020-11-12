@@ -31,9 +31,9 @@ Init kplugin-template.
     ./kplugin-template/run/init
 
 
-Make your watch.local file and update with your credential.
+Make your .local file and update with your kintone credential.
 
-    cp ./run/watch ./run/watch.local
+    cp ./run/upload ./run/upload.local
 
 
 Confirm your src/ directory is created.
