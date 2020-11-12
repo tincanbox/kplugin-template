@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -e
 echo $(pwd)
 
 kpath="./kplugin-template"
@@ -61,7 +64,7 @@ mkdir ./src
 cp -r "$kpath"/src/* ./src/
 
 git init
-git submodule init --remote --recursive
+git submodule update --init --force --remote --recursive
 npm install
 
 exit 0
