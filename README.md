@@ -9,9 +9,11 @@ Simple Bootstrapper for kintone-plugin.
 
 ## Installation
 
-Init your project FIRST.
+Install create-kintone-plugin
 
-DONT forget this.
+    npm install -g @kintone/create-plugin
+
+Then init your project. DONT forget this.
 
     create-kintone-plugin yourproject
 
