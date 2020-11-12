@@ -3,9 +3,9 @@ import SharedLib from '../lib/shared.js';
 (function(k, factory) {
   'use strict';
 
-  factory(new Kluginn.default(), {
-    plugin: "YOUR_PLUGIN_NAME"
-  });
+  factory(new Kluginn.default({
+    namespace: "kplugin-copiable-field"
+  }));
 
 })(kintone, function(p, info){
 

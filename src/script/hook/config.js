@@ -3,9 +3,9 @@ import SharedLib from '../lib/shared.js';
 (function(k, factory) {
   'use strict';
 
-  factory(new Kluginn.default(), {
-    plugin: "YOUR_PLUGIN_NAME"
-  });
+  factory(new Kluginn.default({
+    namespace: "YOUR_PLUGIN_NAME"
+  }));
 
 })(kintone, function(p, info){
 
@@ -23,29 +23,19 @@ import SharedLib from '../lib/shared.js';
     // @see http://tabulator.info/docs
     column: [
       {
-        title:"Name", field:"name",
-        width:150, editor: 'input',
-        validator: ["required"]
-      },
-      {
         title:"Target", field:"target",
-        width:150, editor: 'select',
+        width:400, editor: 'select',
         editorParams: {
           values: function(row){
             var vals = {};
             var ks = Object.keys(S.properties).sort();
             for(var k of ks){
               var p = S.properties[k];
-              vals[p.code] = p.code + " ["+p.type+"]"
+              vals[p.code] = p.label + " ["+p.code+"]" + " ["+p.type+"]"
             }
             return vals;
           },
         },
-        validator: ["required"]
-      },
-      {
-        title:"Value",
-        field:"value", formatter: 'textarea', editor: 'textarea',
         validator: ["required"]
       },
       {
@@ -111,7 +101,7 @@ import SharedLib from '../lib/shared.js';
                 title: "Yay!!",
                 text: "Your data was correctly saved."
               });
-              init_config_table();
+              init_config_form();
             });
           })
           .catch(validation_error);
@@ -154,7 +144,7 @@ import SharedLib from '../lib/shared.js';
 
   // Main hook after kintone and Kluginn were initialized.
   function main(){
-    init_config_table();
+    init_config_form();
     K.ui.bind_action(A);
   }
 
@@ -176,9 +166,10 @@ import SharedLib from '../lib/shared.js';
    * ( void
    * ) => void
    */
-  function init_config_table(){
+  function init_config_form(){
     load_config();
     build_table();
+    render_plugin_data();
   }
 
   /* Just loads $k.config
@@ -188,6 +179,16 @@ import SharedLib from '../lib/shared.js';
   function load_config(){
     S.config = K.config.fetch();
     return S.config;
+  }
+
+  function render_plugin_data(){
+    for(let k in S.config){
+      let v = S.config[k];
+      if (k == 'json') {
+        continue;
+      }
+      $('.plugin-data[name="' + k + '"]').val(v);
+    }
   }
 
   /* Builds config table and replace S.table prop.
