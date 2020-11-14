@@ -4,4 +4,4 @@ package-lock.json
 bk.*
 *.local
 .build
-src/vendor/kluginn
+*.ppk
