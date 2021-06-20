@@ -40,7 +40,8 @@ Confirm your src/ directory is created.
 
 ## Config
 
-Update your
+Update your ....
+
 - manifest.json
 - run/watch.local
 - package.json
@@ -51,6 +52,8 @@ And make a first commit then push.
 ## Building
 
     npm run start
+    or
+    npm run build
 
 
 
