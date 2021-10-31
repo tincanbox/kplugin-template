@@ -7,7 +7,7 @@
     "en": "kplugin-template-default"
   },
   "description": {
-    "en": "kplugin-template-default : Rename this for your developing PlugIn."
+    "en": "kplugin-template : Rename this for your developing PlugIn."
   },
 
   "config": {

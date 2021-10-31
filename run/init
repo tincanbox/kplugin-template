@@ -71,10 +71,21 @@ if [ -e ./src ]
     echo "src dir not found."
 fi
 
-mkdir ./src
+mkdir ./src || :
 cp -r "$kpath"/src/* ./src/
 
-git init
+if [ -e *.ppk ]
+  then
+    echo ".ppk already exists"
+  else
+    echo "init .ppk"
+fi
+
+
+
+# git
+
+git init || :
 git submodule update --init --force --remote --recursive
 npm install
 
